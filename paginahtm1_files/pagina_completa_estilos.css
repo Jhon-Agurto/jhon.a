@@ -1,0 +1,115 @@
+
+.clear { clear: both; }
+img { border: none; }
+
+h2,h3,p{color:white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 1000px;
+ background-color: rgba(2, 10, 17, 0.87);
+  margin: auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: 1px solid rgb(8, 7, 0);
+}
+
+#cabecera { clear: both; }
+
+#lateral { float: left; width: 20%; }
+#contenido { float: right; width: 78%; }
+#contenido #principal { float: left; width: 78%; }
+#contenido #secundario { float: right; width: 20%; }
+#pie { clear: both; }
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo { float: left; }
+#cabecera #buscador { float: right; }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu_principal { float: left;
+}
+
+#menu_principal a{
+  text-decoration: none;
+  color:black;
+  padding: 8px;
+  background-color: beige;
+  border: 1px solid white;
+  margin-right: 5px;
+
+}
+#menu_principal a:hover{
+  background-color: rgba(104, 247, 38, 0.945);
+
+}
+#menu_principal li{
+ display: flex;
+ float: left;
+}
+
+/*-- Sección Principal -----------------------------------------------*/
+#contenido #principal .articulo img:hover {
+float: left; 
+border-radius: 20%;
+-webkit-border-radius: 20%;
+box-shadow: 0px 0px 15px 15px beige;
+-webkit-boxshadow: 0px 0px 15px 15px beige;
+transform: rotate(360deg);
+}
+
+
+/*-- Pie de página ---------------------------------------------------*/
+#pie .enlaces   { float: left; }
+#pie .copyright { float: right; }
+#cabecera,
+#menu,
+#lateral,
+#lateral #noticias,
+#lateral #publicidad,
+#contenido,
+#contenido #principal,
+#contenido #secundario,
+#pie {
+  padding: .5em;
+}
+
+#lateral {
+  padding: 0;
+}
+
+#cabecera {
+  padding: 1em;
+}
+
+#menu {
+  margin-bottom: .5em;
+}
+
+#contenido {
+  width: 77%;
+  padding: 0;
+}
+
+#contenido #principal {
+  width: 73%;
+}
+
+#pie {
+  padding: .5em 0;
+  margin-top: 1em;
+}
+
+#contenido #principal .articulo {
+  margin-bottom: 1em;
+}
+
+#contenido #principal .articulo img {
+  margin: .9em;
+}
+
+#lateral #publicidad {
+  margin-top: 1em;
+}
